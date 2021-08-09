@@ -1,0 +1,17 @@
+﻿@model (bool mathError, string resultado);
+
+@if (Model.mathError)
+{
+    <div class="alert alert-danger alert-dismissible fade show">
+        <p>@Model.resultado</p>
+        <a href="#" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></a>
+    </div>
+}
+else
+{
+    <div class="alert alert-info alert-dismissible fade show">
+        <p>El resultado es: @Model.resultado</p>
+        <a href="#" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></a>
+    </div>
+
+}

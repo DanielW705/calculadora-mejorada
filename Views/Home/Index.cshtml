@@ -1,0 +1,27 @@
+﻿<div class="container mt-5">
+    <div class="row">
+        <div class="col-6">
+            <label>Numero 1</label>
+            <input value="0" type="number" id="num1" placeholder="0" class="form-control" />
+            <small></small>
+            <label>Numero 2</label>
+            <input value="0" type="number" id="num2" placeholder="0" class="form-control" />
+            <small></small>
+            <select class="form-select mt-3" id="selector">
+                <option value="">Seleccione una opcion</option>
+                <option value="Sum">Suma</option>
+                <option value="Res">Resta</option>
+                <option value="Mult">Multiplicacion</option>
+                <option value="Div">Division</option>
+            </select>
+            <button class="btn btn-primary mt-4">Calcular</button>
+        </div>
+        <div class="col-6" id="resultados">
+
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    const url = "@Url.Action("Resultado", "Home")";
+</script>
+<script src="~/js/site.js"></script>
